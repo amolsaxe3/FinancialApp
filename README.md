@@ -9,7 +9,6 @@
   <p>
   <br>
   It also promises to reduce manual work associated with spread sheet based data analysis that in present world most of the analysts do analysts for different asset classes before placing an actual trade/making an investment decision. It will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
-  
    This app will also have a subscription service model for monthly or annual membership, it will use modern payment checout features.
     </p>
     <br>
@@ -20,14 +19,10 @@
   - Plaid APIs for financial data aggregation
   - Converts XLS (spreadsheet data) into an API that this app will use to display buy/sell zones in trading charts
   </p>
-  
 <p>
- 
   uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
 </p>
-
 <br>
-
 <div align="center">
   <a href="https://facebook.github.io/react/"><img src="./internals/img/react-padded-90.png" /></a>
   <a href="https://webpack.github.io/"><img src="./internals/img/webpack-padded-90.png" /></a>
@@ -38,12 +33,9 @@
   <a href="https://facebook.github.io/jest/"><img src="./internals/img/jest-padded-90.png" /></a>
   <a href="https://yarnpkg.com/"><img src="./internals/img/yarn-padded-90.png" /></a>
 </div>
-
 <hr />
 <br />
-
 ## Install
-
 - **If you have installation or compilation issues with this project, please see [debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
 
 ## Starting Development
