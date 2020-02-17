@@ -1,4 +1,6 @@
 {
   "HOME": "/",
-  "COUNTER": "/counter"
+  "COUNTER": "/counter",
+  "BANKLIST": "/banklist",
+  "BANKDETAIL": "/bankdetail"
 }
