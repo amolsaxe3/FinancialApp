@@ -7,6 +7,7 @@ import CounterPage from './containers/CounterPage';
 import BankList from './components/BankList';
 import BankDetail from './components/BankDetail';
 
+
 export default () => (
   <App>
     <Switch>
