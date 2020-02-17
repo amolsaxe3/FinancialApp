@@ -13,7 +13,7 @@ const client = new plaid.Client(
   CLIENT_ID,
   SECRET,
   PUBLIC_KEY,
-  plaid.environments.sandbox
+  plaid.environments.development
 );
 
 export function fetchAllBanks() {

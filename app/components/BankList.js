@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import plaid from 'plaid';
 import PlaidLink from 'react-plaid-link';
 import { Link } from 'react-router-dom';
-import styles from './Home.css';
 import routes from '../constants/routes.json';
 import { CLIENT_ID, SECRET, PUBLIC_KEY } from '../Secret'
 import {round} from 'lodash/round'
 import BankDetail from './BankDetail'
+import styles from './BankList.css';
 // TODO: Change these to your credentials
 
 const KEY_ITEMS = 'items';
@@ -63,11 +63,14 @@ export default class Home extends Component {
       selectedBank: {}
     };
 
+    this.onBankClick = this.onBankClick.bind(this)
+    this.handleClickBack = this.handleClickBack.bind(this)
+
     this.client = new plaid.Client(
       CLIENT_ID,
       SECRET,
       PUBLIC_KEY,
-      plaid.environments.sandbox
+      plaid.environments.development
     );
   }
 
@@ -97,6 +100,12 @@ export default class Home extends Component {
     })
   }
 
+  handleClickBack() {
+    this.setState({
+      selectedBank: {}
+    })
+  }
+
   fetchBalance(item) {
     // const items = getItems();
     console.error('inside fetchBalance: ', item)
@@ -108,11 +117,11 @@ export default class Home extends Component {
       this.client
         .getBalance(accessToken, {})
         .then(res => {
-          const randomIndex = Math.floor(Math.random()*
-          Math.floor(6)) //generate random index
-          console.error("randomIndex===>",randomIndex)
-          const changedAccounts = res.accounts.splice(randomIndex) // removing the random indexth item
-          const balance = changedAccounts.reduce((val, acct) => {
+          // const randomIndex = Math.floor(Math.random()*
+          // Math.floor(6)) //generate random index
+          // console.error("randomIndex===>",randomIndex)
+          // const changedAccounts = res.accounts.splice(randomIndex) // removing the random indexth item
+          const balance = res.accounts.reduce((val, acct) => {
             console.error('balance of the account: ', acct)
             return val + acct.balances.current;
           }, 0);
@@ -144,6 +153,7 @@ export default class Home extends Component {
       .exchangePublicToken(publicToken)
       .then(res => {
         const { access_token: accessToken } = res;
+        console.error('inside onItemLinked: ', accessToken)
         addItem({
           id,
           name,
@@ -195,17 +205,11 @@ export default class Home extends Component {
     return this.state.selectedBank.name ? <BankDetail {...this.state.selectedBank} /> : (
       <div>
         <div className={styles.container} data-tid="container">
-          {!error && (
-            <div>
-              <h1>Total Balance</h1>
-              <h2>{value}</h2>
-            </div>
-          )}
-          {error && <h3>{error}</h3>}
-          {<h3>{items.allIds.length}</h3>}
-          {<h3>{items.allIds[0]}</h3>}
-          {<h3>{items.allIds[1]}</h3>}
-          {<table>
+        {items.allIds.length > 0 &&
+          <div>
+          <h1>Summary of your Bank Accounts</h1>
+          <div className={styles.bankList}>
+          <table>
               <tr>
                 <th>#</th>
                 <th>Bank Name</th>
@@ -215,20 +219,21 @@ export default class Home extends Component {
                 return (
                   <tr>
                     <td>{idx+1}</td>
-                    <td onClick={() => this.onBankClick({name: items.byId[bank_id].name, accounts: this.state.itemsWithAccounts[bank_id]})}>{items.byId[bank_id].name}</td>
+                    <td onClick={() => this.onBankClick({name: items.byId[bank_id].name, onClickBackButton: this.handleClickBack, accounts: this.state.itemsWithAccounts[bank_id]})}>{items.byId[bank_id].name}</td>
                     <td>{this.state.itemsWithTotalBalance[bank_id]}</td>
                   </tr>
                 )
         })
-         }</table>}
+         }</table></div> </div>}
           {items.allIds.length < 1000 && (
             <div>
-              <h3>Link to your bank to view your account balance.</h3>
+              <h3>Add a bank to view your account balance.</h3>
               <PlaidLink
                 publicKey={PUBLIC_KEY}
                 // product="auth"
                 product={['auth', 'transactions']}
-                env="sandbox"
+                env="development"
+                //env="sandbox"
                 apiVersion={'v2'}
                 clientName="All in 1 FinApp"
                 onSuccess={this.onItemLinked.bind(this)}
