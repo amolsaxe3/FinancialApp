@@ -8,7 +8,7 @@
  </p>
   <p>
   <br>
-  It also promises to reduce manual work associated with spread sheet based data analysis that in present world most of the analysts do analysts for different asset classes before placing an actual trade/making an investment decision. It will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
+  It also promises to reduce manual work associated with spread sheet based data analysis that in present world most of the analysts spend time analysinf different asset classes before placing an actual trade or before making an investment decision. This will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
    This app will also have a subscription service model for monthly or annual membership, it will use modern payment checout features.
     </p>
     <br>
@@ -35,9 +35,6 @@
 </div>
 <hr />
 <br />
-## Install
-- **If you have installation or compilation issues with this project, please see [debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
-
 ## Starting Development
 
 Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process
