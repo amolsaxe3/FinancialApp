@@ -1,9 +1,27 @@
-<img src="internals/img/erb-banner.png" width="100%" />
-
-<br>
-
+## All in one FinApp
+  <p>
+  This is a financial data aggregation, cross-platform desktop app that runs in Linux, Mac and Windows. 
+  <br>
+  In today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. All in one FinApp promises to solve this problem by aggregating data from all financial institutions such as banks, credit cards, investments, IRAs, brokerage and many more. In future it will display not only aggregated personal finance data but also assist in investment decision-making process by asset class specific charts i.e. equities, bonds, commodity and options charts, and it will also have brokerage integration to place trades orders.
+ </p>
+  <p>
+  <br>
+  It also promises to reduce manual work associated with spread sheet based data analysis that in present world most of the analysts do analysts for different asset classes before placing an actual trade/making an investment decision. It will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
+  
+   This app will also have a subscription service model for monthly or annual membership, it will use modern payment checout features.
+    </p>
+    <br>
+    <p>
+  Technology used:
+  - Electron framework for creaiting desktop app
+  - Javascript, React, Redux, Node, React-redux, Webpack, react-hot-loader
+  - Plaid APIs for financial data aggregation
+  - Converts XLS (spreadsheet data) into an API that this app will use to display buy/sell zones in trading charts
+  </p>
+  
 <p>
-  Electron React Boilerplate uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
+ 
+  uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
 </p>
 
 <br>
@@ -48,46 +66,14 @@
 
 - **If you have installation or compilation issues with this project, please see [our debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
 
-First, clone the repo via git:
-
-```bash
-git clone --depth 1 --single-branch --branch master https://github.com/electron-react-boilerplate/electron-react-boilerplate.git your-project-name
-```
-
-And then install the dependencies with yarn.
-
-```bash
-$ cd your-project-name
-$ yarn
-```
-
 ## Starting Development
 
-Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
-
-```bash
-$ yarn dev
-```
-
-## Packaging for Production
-
-To package apps for the local platform:
-
-```bash
-$ yarn package
-```
+Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process
 
 ## Docs
 
 See our [docs and guides here](https://electron-react-boilerplate.js.org/docs/installation)
 
-## Donations
-
-**Donations will ensure the following:**
-
-- 🔨 Long term maintenance of the project
-- 🛣 Progress on the [roadmap](https://electron-react-boilerplate.js.org/docs/roadmap)
-- 🐛 Quick responses to bug reports and help requests
 
 ## Backers
 
@@ -161,27 +147,6 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 
 ## Maintainers
 
-- [Vikram Rangaraj](https://github.com/vikr01)
-- [Amila Welihinda](https://github.com/amilajack)
-- [C. T. Lin](https://github.com/chentsulin)
-- [Jhen-Jie Hong](https://github.com/jhen0409)
-
-## License
-
-MIT © [Electron React Boilerplate](https://github.com/electron-react-boilerplate)
-
-[npm-image]: https://img.shields.io/npm/v/electron-react-boilerplate.svg?style=flat-square
-[github-tag-image]: https://img.shields.io/github/tag/electron-react-boilerplate/electron-react-boilerplate.svg?label=version
-[github-tag-url]: https://github.com/electron-react-boilerplate/electron-react-boilerplate/releases/latest
-[travis-image]: https://travis-ci.com/electron-react-boilerplate/electron-react-boilerplate.svg?branch=master
-[travis-url]: https://travis-ci.com/electron-react-boilerplate/electron-react-boilerplate
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/4m972s6e4nf52hx6/branch/master?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/electron-react-boilerplate/electron-react-boilerplate/branch/master
-[david-image]: https://img.shields.io/david/electron-react-boilerplate/electron-react-boilerplate.svg
-[david-url]: https://david-dm.org/electron-react-boilerplate/electron-react-boilerplate
-[david-dev-image]: https://img.shields.io/david/dev/electron-react-boilerplate/electron-react-boilerplate.svg?label=devDependencies
-[david-dev-url]: https://david-dm.org/electron-react-boilerplate/electron-react-boilerplate?type=dev
-[good-first-issue-image]: https://img.shields.io/github/issues/electron-react-boilerplate/electron-react-boilerplate/good%20first%20issue.svg?label=good%20first%20issues
-[good-first-issue-url]: https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue"
+- [Amol Saxena](https://github.com/amolsaxe3)
 
 [making changes]: amol saxena
