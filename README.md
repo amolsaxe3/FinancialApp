@@ -2,6 +2,8 @@
   <p>
   This is a financial data aggregation, cross-platform desktop app that runs in Linux, Mac and Windows. 
   <br>
+  </p>
+  <p>
   In today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. All in one FinApp promises to solve this problem by aggregating data from all financial institutions such as banks, credit cards, investments, IRAs, brokerage and many more. In future it will display not only aggregated personal finance data but also assist in investment decision-making process by asset class specific charts i.e. equities, bonds, commodity and options charts, and it will also have brokerage integration to place trades orders.
  </p>
   <p>
