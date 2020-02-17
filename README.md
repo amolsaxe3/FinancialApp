@@ -1,4 +1,4 @@
-## All in one FinApp
+## All-in-one FinApp
   <p>
   This is a financial data aggregation, cross-platform desktop app that runs in Linux, Mac and Windows. 
   <br>
