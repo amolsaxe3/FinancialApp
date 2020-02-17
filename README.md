@@ -1,7 +1,20 @@
 <br>
-
+  ## All in one FinApp
+  This is "All-in-one FinApp", a financial data aggregation cross-platform desktop app that runs in Linux, Mac and Windows. As a consumer, we currently use multiple apps to see the complete picture of our finances. This app aggregates data from all financial institutions including banks, credit cards, investments, IRA and many more to displays aggregated personal finance picture.
+  
+  In future it will have stock, bonds, commodity and options trading as available feature under one single app.
+  
+  It also promises to reduce manual work associated with data analysis that in present world needs to be done for different asset classes before placing an actual trade by automating chart plotting using the XLS data to an API and then showing those zones in chart.
+  
+  Technology used:
+  - Electron framework for creaiting desktop app
+  - Javascript, React, Redux, Node
+  - Plaid APIs for financial data aggregation
+  - Converts XLS (spreadsheet data) into an API that this app will use to display buy/sell zones in trading charts
+  
 <p>
-  All in one FinApp uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
+ 
+  uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
 </p>
 
 <br>
