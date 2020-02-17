@@ -178,19 +178,7 @@ export default class Home extends Component {
     console.error('state in render is: ', this.state)
     const { balance, loading, error } = this.state;
     const items = getItems();
-    // const allBankIds = items.allIds;
-    // console.error('inside render: ', allBankIds)
-    // if(allBankIds.length > 0) {
-    //   console.error('inside the if because the length is: ', allBankIds.length)
-    //   console.error('items are: ', items)
-    //   console.error('items[allBankIds[0]]: ', items.byId[allBankIds[0]])
-    //   for(let i =0; i < allBankIds.length; i++){
-    //     if(items.byId[allBankIds[i]]){
-    //       console.error('calling fetchBalance with: ', items.byId[allBankIds[i]])
-    //       this.fetchBalance(items.byId[allBankIds[i]]);
-    //     }
-    //   }
-    // }
+
     let value;
     // eslint-disable-next-line no-unused-vars
     let bankObjects;
@@ -200,7 +188,7 @@ export default class Home extends Component {
       value = `$${balance}`;
     }
 
-    return (
+    return this.state.selectedBank.name ? <BankDetail {...this.state.selectedBank} /> : (
       <div>
         <div className={styles.container} data-tid="container">
           {!error && (
@@ -223,7 +211,7 @@ export default class Home extends Component {
                 return (
                   <tr>
                     <td>{idx+1}</td>
-                    <td><Link to={`/bankdetail/${bank_id}`}>{items.byId[bank_id].name}</Link></td>
+                    <td onClick={() => this.onBankClick({name: items.byId[bank_id].name, accounts: this.state.itemsWithAccounts[bank_id]})}>{items.byId[bank_id].name}</td>
                     <td>{this.state.itemsWithTotalBalance[bank_id]}</td>
                   </tr>
                 )

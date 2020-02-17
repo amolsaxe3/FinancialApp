@@ -1,11 +1,17 @@
+import React, { Component } from 'react';
+
 const BankDetail = props => {
+  console.error('props in BankDetail: ', props)
   return <div>
-    <h1>props.name</h1>
-    <h3>Your account details are: </h3>
+    <h1>{props.name}</h1>
+    <h3>Your bank details are: </h3>
     {props.accounts.map(account => {
       return <div>
-        {account.balances.current}
+        <label>{account.official_name}</label>
+        <span>{account.balances.current}</span>
       </div>
     })}
   </div>
 }
+
+export default BankDetail
