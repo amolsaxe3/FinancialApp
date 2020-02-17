@@ -1,16 +1,20 @@
 <br>
   ## All in one FinApp
-  This is "All-in-one FinApp", a financial data aggregation cross-platform desktop app that runs in Linux, Mac and Windows. As a consumer, we currently use multiple apps to see the complete picture of our finances. This app aggregates data from all financial institutions including banks, credit cards, investments, IRA and many more to displays aggregated personal finance picture.
+  This is a financial data aggregation, cross-platform desktop app that runs in Linux, Mac and Windows. 
   
-  In future it will have stock, bonds, commodity and options trading as available feature under one single app.
+  in today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. This app aggregates data from all financial institutions including banks, credit cards, investments, IRA and many more to displays aggregated personal finance picture.
+  
+  In future it will have stock, bonds, commodity and options charts for trading and analysis as available feature under one single app.
   
   It also promises to reduce manual work associated with data analysis that in present world needs to be done for different asset classes before placing an actual trade by automating chart plotting using the XLS data to an API and then showing those zones in chart.
-  
+    This app will have a subscription service model for monthly membership, it will use modern payment checout methods.
+    
   Technology used:
   - Electron framework for creaiting desktop app
   - Javascript, React, Redux, Node
   - Plaid APIs for financial data aggregation
   - Converts XLS (spreadsheet data) into an API that this app will use to display buy/sell zones in trading charts
+  
   
 <p>
  
