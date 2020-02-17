@@ -1,3 +1,0 @@
-
-
-export { CLIENT_ID, SECRET, PUBLIC_KEY }
