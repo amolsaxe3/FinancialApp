@@ -20,9 +20,29 @@
 
 .bankList {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
 }
 
 .bankList td {
-  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.backButton {
+  margin: 20px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.clickableRow {
+  cursor: pointer;
+}
+
+.headerRow {
+  background-color: dodgerblue;
+}
+
+.tableBorder {
+  border: dodgerblue solid;
 }

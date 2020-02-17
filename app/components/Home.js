@@ -12,8 +12,8 @@ export default class Home extends Component<Props> {
   render() {
     return (
       <div className={styles.container} data-tid="container">
-        <h2>Home</h2>
-        <Link to={routes.BANKLIST}>to your accounts</Link>
+        <h1>All-in-one FinApp</h1>
+        <Link to={routes.BANKLIST}>Portfolio View</Link>
       </div>
     );
   }

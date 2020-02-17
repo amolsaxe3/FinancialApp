@@ -204,13 +204,14 @@ export default class Home extends Component {
 
     return this.state.selectedBank.name ? <BankDetail {...this.state.selectedBank} /> : (
       <div>
+    { <Link to='/'><button className={styles.backButton}>Back to home</button></Link>}
         <div className={styles.container} data-tid="container">
         {items.allIds.length > 0 &&
           <div>
-          <h1>Summary of your Bank Accounts</h1>
+          <h1>Bank Accounts Summary</h1>
           <div className={styles.bankList}>
-          <table>
-              <tr>
+          <table className={styles.tableBorder}>
+              <tr className={styles.headerRow}>
                 <th>#</th>
                 <th>Bank Name</th>
                 <th>Balance</th>
@@ -219,15 +220,15 @@ export default class Home extends Component {
                 return (
                   <tr>
                     <td>{idx+1}</td>
-                    <td onClick={() => this.onBankClick({name: items.byId[bank_id].name, onClickBackButton: this.handleClickBack, accounts: this.state.itemsWithAccounts[bank_id]})}>{items.byId[bank_id].name}</td>
-                    <td>{this.state.itemsWithTotalBalance[bank_id]}</td>
+                    <td className={styles.clickableRow} onClick={() => this.onBankClick({name: items.byId[bank_id].name, onClickBackButton: this.handleClickBack, accounts: this.state.itemsWithAccounts[bank_id]})}>{items.byId[bank_id].name}</td>
+                    <td>{this.state.itemsWithTotalBalance[bank_id] || 'Loading...'}</td>
                   </tr>
                 )
         })
          }</table></div> </div>}
           {items.allIds.length < 1000 && (
             <div>
-              <h3>Add a bank to view your account balance.</h3>
+              <h3></h3>
               <PlaidLink
                 publicKey={PUBLIC_KEY}
                 // product="auth"
@@ -235,10 +236,10 @@ export default class Home extends Component {
                 env="development"
                 //env="sandbox"
                 apiVersion={'v2'}
-                clientName="All in 1 FinApp"
+                clientName="All-in-one FinApp"
                 onSuccess={this.onItemLinked.bind(this)}
               >
-              Add Financial Institution
+              Add a Bank...
               </PlaidLink>
             </div>
           )}
