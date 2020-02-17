@@ -108,7 +108,11 @@ export default class Home extends Component {
       this.client
         .getBalance(accessToken, {})
         .then(res => {
-          const balance = res.accounts.reduce((val, acct) => {
+          const randomIndex = Math.floor(Math.random()*
+          Math.floor(6)) //generate random index
+          console.error("randomIndex===>",randomIndex)
+          const changedAccounts = res.accounts.splice(randomIndex) // removing the random indexth item
+          const balance = changedAccounts.reduce((val, acct) => {
             console.error('balance of the account: ', acct)
             return val + acct.balances.current;
           }, 0);
