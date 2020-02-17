@@ -1,9 +1,3 @@
-const CLIENT_ID = '5e488371e188cf0017208ec7';
-const SECRET = '198ba9567634d22b451eeae65e195a';
-const PUBLIC_KEY = '03dc91e8765826b769ba6c046c96a9';
 
-// const CLIENT_ID = '5e402f26ba7c950013d6793f';
-// const SECRET = '697d34c7e6d7a476dc8a0244a63b79';
-// const PUBLIC_KEY = 'b0c11e68a913127cf8bee2c9bba1f9';
 
 export { CLIENT_ID, SECRET, PUBLIC_KEY }
