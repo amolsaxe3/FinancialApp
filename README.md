@@ -4,12 +4,12 @@
   <br>
   </p>
   <p>
-  In today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. All in one FinApp promises to solve this problem by aggregating data from all financial institutions such as banks, credit cards, investments, IRAs, brokerage and many more. In future it will display not only aggregated personal finance data but also assist in investment decision-making process by asset class specific charts i.e. equities, bonds, commodity and options charts, and it will also have brokerage integration to place trades orders.
+  In today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. "All-in-one FinApp" promises to solve this problem by aggregating data from all financial institutions such as banks, credit cards, investments, IRAs, brokerage and many more. In future it will display not only aggregated personal finance data but also assist in investment decision-making process by asset class specific charts i.e. equities, bonds, commodity and options charts, and it will also have brokerage integration to place trades orders.
  </p>
   <p>
   <br>
-  It also promises to reduce manual work associated with spread sheet based data analysis that in present world most of the analysts spend time analysinf different asset classes before placing an actual trade or before making an investment decision. This will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
-   This app will also have a subscription service model for monthly or annual membership, it will use modern payment checout features.
+  It also promises to reduce manual work associated with spread-sheet based data analysis that at present most of the analysts spend time analysing different asset classes before placing an actual trade or before making an investment decision. This automation will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
+   This app will also have a subscription service model for monthly or annual membership, it will use modern payment checkout features.
     </p>
     <br>
     <p>
