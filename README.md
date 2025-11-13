@@ -6,8 +6,7 @@ In today’s fragmented financial landscape, individuals and analysts rely on mu
 All-in-One FinApp eliminates this fragmentation by providing a single, secure hub where users can view, analyze, and act on their entire financial universe.
 
 **Key Capabilities**
-**1. Unified Financial Aggregation
-**
+**1. Unified Financial Aggregation**
 Using Plaid APIs, FinApp securely connects to:
 
 Bank accounts
@@ -68,7 +67,7 @@ Modern payment checkout workflows
 
 Secure authentication & billing
 
-Technology Stack
+**Technology Stack**
 
 FinApp uses a modern, high-performance tech stack optimized for multi-platform desktop delivery and rapid development:
 
@@ -92,9 +91,9 @@ Plaid APIs — Real-time financial data aggregation
 
 Custom data processing layer — Converts spreadsheets (XLS) into API data feeds for chart analysis
 
-Value Proposition
+**Value Proposition**
 
-All-in-One FinApp promises to:
+**All-in-One FinApp promises to:**
 
 Give users a complete, real-time financial picture
 
