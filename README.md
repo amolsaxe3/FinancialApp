@@ -5,7 +5,7 @@ In today’s fragmented financial landscape, individuals and analysts rely on mu
 
 All-in-One FinApp eliminates this fragmentation by providing a single, secure hub where users can view, analyze, and act on their entire financial universe.
 
-Key Capabilities
+**Key Capabilities**
 1. Unified Financial Aggregation
 
 Using Plaid APIs, FinApp securely connects to:
