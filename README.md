@@ -1,40 +1,112 @@
-## All-in-one FinApp
-  <p>
-  This is a financial data aggregation, cross-platform desktop app that runs in Linux, Mac and Windows. 
-  <br>
-  </p>
-  <p>
-  In today's world it is difficult to get a complete picture of our finances and also manage investments under one single app. We currently use multiple apps to see the whole picture of our finances before making an investment decision. "All-in-one FinApp" promises to solve this problem by aggregating data from all financial institutions such as banks, credit cards, investments, IRAs, brokerage and many more. In future it will display not only aggregated personal finance data but also assist in investment decision-making process by asset class specific charts i.e. equities, bonds, commodity and options charts, and it will also have brokerage integration to place trades orders.
- </p>
-  <p>
-  <br>
-  It also promises to reduce manual work associated with spread-sheet based data analysis that at present most of the analysts spend time analysing different asset classes before placing an actual trade or before making an investment decision. This automation will be achieved by automating chart plotting by converting the XLS data to an API and then showing the preferred buy or sell zones in a specific asset class chart.
-   This app will also have a subscription service model for monthly or annual membership, it will use modern payment checkout features.
-    </p>
-    <br>
-    <p>
-  Technology used:
-  - Electron framework for creaiting desktop app
-  - Javascript, React, Redux, Node, React-redux, Webpack, react-hot-loader
-  - Plaid APIs for financial data aggregation
-  - Converts XLS (spreadsheet data) into an API that this app will use to display buy/sell zones in trading charts
-  </p>
-<p>
-  uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a> for rapid application development (HMR).
-</p>
-<br>
-<div align="center">
-  <a href="https://facebook.github.io/react/"><img src="./internals/img/react-padded-90.png" /></a>
-  <a href="https://webpack.github.io/"><img src="./internals/img/webpack-padded-90.png" /></a>
-  <a href="http://redux.js.org/"><img src="./internals/img/redux-padded-90.png" /></a>
-  <a href="https://github.com/ReactTraining/react-router"><img src="./internals/img/react-router-padded-90.png" /></a>
-  <a href="https://flowtype.org/"><img src="./internals/img/flow-padded-90.png" /></a>
-  <a href="http://eslint.org/"><img src="./internals/img/eslint-padded-90.png" /></a>
-  <a href="https://facebook.github.io/jest/"><img src="./internals/img/jest-padded-90.png" /></a>
-  <a href="https://yarnpkg.com/"><img src="./internals/img/yarn-padded-90.png" /></a>
-</div>
-<hr />
-<br />
+## All-in-one FinApp - Unified Financial Intelligence Platform
+All-in-One FinApp is a next-generation, cross-platform financial data aggregation and investment-decision assistant that runs seamlessly on Linux, macOS, and Windows.
+
+In today’s fragmented financial landscape, individuals and analysts rely on multiple disconnected apps—banking portals, brokerage dashboards, credit-card apps, and spreadsheets—to understand their full financial picture. This leads to inefficient workflows, incomplete insights, and slower investment decisions.
+
+All-in-One FinApp eliminates this fragmentation by providing a single, secure hub where users can view, analyze, and act on their entire financial universe.
+
+Key Capabilities
+1. Unified Financial Aggregation
+
+Using Plaid APIs, FinApp securely connects to:
+
+Bank accounts
+
+Credit cards
+
+Investment portfolios
+
+IRAs & 401(k)s
+
+Brokerage accounts
+
+Loans & other financial institutions
+
+Users gain a real-time, holistic view of their finances across all providers in a single dashboard.
+
+2. Advanced Investment Insights & Charting
+
+FinApp goes beyond aggregation by offering asset-class-specific analytics, including:
+
+Equity charts
+
+Bond analytics
+
+Commodity and futures charts
+
+Options charts
+
+It supports automated chart plotting by converting user XLS datasets into an internal API. The system highlights:
+
+Preferred buy/sell zones
+
+Multi-timeframe indicators
+
+Asset-specific signals
+
+This drastically reduces the manual spreadsheet work analysts often perform before executing trades.
+
+3. Trade Execution (Future Roadmap)
+
+The platform will integrate with major brokerages to support:
+
+Direct order placement
+
+Portfolio rebalancing
+
+Trade automation workflows
+
+This transforms FinApp from a passive aggregator into an active investment assistant.
+
+4. Subscription-Ready Business Model
+
+Built with scalability in mind, the app includes:
+
+Monthly & annual membership plans
+
+Modern payment checkout workflows
+
+Secure authentication & billing
+
+Technology Stack
+
+FinApp uses a modern, high-performance tech stack optimized for multi-platform desktop delivery and rapid development:
+
+Electron — Cross-platform desktop application framework
+
+React — UI components
+
+Redux — State management
+
+React-Redux — Streamlined state integration
+
+React Router — Navigational flow
+
+Webpack — Module bundling
+
+React Hot Loader — Hot Module Reloading (HMR) for faster dev cycles
+
+Node.js — Backend logic & XLS-to-API conversion pipeline
+
+Plaid APIs — Real-time financial data aggregation
+
+Custom data processing layer — Converts spreadsheets (XLS) into API data feeds for chart analysis
+
+Value Proposition
+
+All-in-One FinApp promises to:
+
+Give users a complete, real-time financial picture
+
+Reduce hours of spreadsheet-driven analysis
+
+Automate investment insights
+
+Enable smarter, faster decisions
+
+Provide an actionable, analytics-driven view of asset performance
+
+Eventually support end-to-end trade execution
 ## Starting Development
 
 Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process
