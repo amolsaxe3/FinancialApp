@@ -5,9 +5,8 @@ In today’s fragmented financial landscape, individuals and analysts rely on mu
 
 All-in-One FinApp eliminates this fragmentation by providing a single, secure hub where users can view, analyze, and act on their entire financial universe.
 
-Key Capabilities
-1. Unified Financial Aggregation
-
+**Key Capabilities**
+**1. Unified Financial Aggregation**
 Using Plaid APIs, FinApp securely connects to:
 
 Bank accounts
@@ -24,7 +23,7 @@ Loans & other financial institutions
 
 Users gain a real-time, holistic view of their finances across all providers in a single dashboard.
 
-2. Advanced Investment Insights & Charting
+**2. Advanced Investment Insights & Charting**
 
 FinApp goes beyond aggregation by offering asset-class-specific analytics, including:
 
@@ -46,8 +45,8 @@ Asset-specific signals
 
 This drastically reduces the manual spreadsheet work analysts often perform before executing trades.
 
-3. Trade Execution (Future Roadmap)
-
+**3. Trade Execution (Future Roadmap)
+**
 The platform will integrate with major brokerages to support:
 
 Direct order placement
@@ -58,8 +57,8 @@ Trade automation workflows
 
 This transforms FinApp from a passive aggregator into an active investment assistant.
 
-4. Subscription-Ready Business Model
-
+**4. Subscription-Ready Business Model
+**
 Built with scalability in mind, the app includes:
 
 Monthly & annual membership plans
